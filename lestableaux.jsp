@@ -90,10 +90,10 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 </form>
 
 <p>-- Afficher la somme si des valeurs ont été saisies --</p>
-<p> if (valeurs != null) { </p>
+<p> if (valeurs != null)  </p>
     <p>Les valeurs saisies sont : String.join(", ", valeurs)</p>
     <p>La somme de ces valeurs est : somme</p>
-<p> } </p>
+
 
 
 <h2>Exercice 4 : La valeur maximum</h2>
@@ -131,10 +131,10 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 </form>
 
 <p>-- Afficher la valeur maximale si des valeurs ont été saisies --</p>
-<p> if (valeurs != null) { </p>
+<p> if (valeurs != null)  </p>
     <p>Les valeurs saisies sont : String.join(", ", valeurs)</p>
     <p>La valeur maximale est : (valeurMax != Integer.MIN_VALUE) ? valeurMax : "Aucune valeur valide saisie"</p>
-<p> } </p>
+
 
 <h2>Exercice 5 : La valeur minimale</h2>
 <p>Ecrire un programme pour afficher la valeur minimale saisie par l'utilisateur</p>
@@ -171,10 +171,9 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 </form>
 
 <p>-- Afficher la valeur minimale si des valeurs ont été saisies --</p>
-<p> if (valeurs != null) { </p>
+<p> if (valeurs != null)  </p>
     <p>Les valeurs saisies sont :  String.join(", ", valeurs) </p>
     <p>La valeur minimale est :  (valeurMin != Integer.MAX_VALUE) ? valeurMin : "Aucune valeur valide saisie" </p>
-<p> } </p>
 
 
 <h2>Exercice 6 : La valeur le plus proche de 0</h2>
@@ -254,15 +253,15 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 </form>
 
 <p>-- Afficher la valeur la plus proche de 0 si des valeurs ont été saisies --</p>
-<p> if (valeurs != null) { </p>
+<p> if (valeurs != null)  </p>
     <p>Les valeurs saisies sont : String.join(", ", valeurs) </p>
     <p>La valeur la plus proche de 0 est :  valeurProcheDeZero </p>
-<p> } </p>
+
 
 <p>Trouvez la valeur la plus proche de 0 (chiffres positifs ou négatifs)</p>
 <p>En cas d'égalité entre un chiffre positif et négatif, affichez le chiffre positif</p>
 
-<p> } </p>
+
 <p><a href="index.html">Retour au sommaire</a></p>
 </body>
 </html>
