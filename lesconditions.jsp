@@ -39,7 +39,66 @@ B = 20</br>
 C = 15</br>
 Oui C est compris entre A et B</p>
 
+<form method="post" action="">
+    <label for="valeurA">A :</label>
+    <input type="text" name="valeurA" required/><br/>
+
+    <label for="valeurB">B :</label>
+    <input type="text" name="valeurB" required/><br/>
+
+    <label for="valeurC">C :</label>
+    <input type="text" name="valeurC" required/><br/>
+
+    <input type="submit" value="Comparer"/>
+</form>
+
+<p>
+    if (request.getMethod().equals("POST")) {
+        // Récupération des valeurs saisies par l'utilisateur
+        int valeurA = Integer.parseInt(request.getParameter("valeurA"));
+        int valeurB = Integer.parseInt(request.getParameter("valeurB"));
+        int valeurC = Integer.parseInt(request.getParameter("valeurC"));
+
+        // Vérification si C est compris entre A et B
+        boolean estCompris = (valeurC >= valeurA && valeurC <= valeurB);
+
+        // Affichage du résultat
+        out.println("<p>");
+        out.println("A = " + valeurA + "<br/>");
+        out.println("B = " + valeurB + "<br/>");
+        out.println("C = " + valeurC + "<br/>");
+
+        if (estCompris) {
+            out.println("Oui, C est compris entre A et B.");
+        } else {
+            out.println("Non, C n'est pas compris entre A et B.");
+        }
+
+        out.println("</p>");
+    }
+</p>
+
+
 <h2>Exercice 2 : Pair ou Impair ?</h2>
+<form method="post" action="">
+    <label for="nombre">Entrez un nombre :</label>
+    <input type="text" name="nombre" required/><br/>
+    <input type="submit" value="Vérifier"/>
+</form>
+
+<p>
+    if (request.getMethod().equals("POST")) {
+        // Récupération du nombre saisi par l'utilisateur
+        int nombre = Integer.parseInt(request.getParameter("nombre"));
+
+        // Vérification si le nombre est pair ou impair
+        if (nombre % 2 == 0) {
+            out.println("<p>" + nombre + " est un nombre pair.</p>");
+        } else {
+            out.println("<p>" + nombre + " est un nombre impair.</p>");
+        }
+    }
+</p>
 <p>Écrivez un programme pour vérifier si un nombre est pair ou impair en utilisant une structure if</p>
 
 <% } %>
