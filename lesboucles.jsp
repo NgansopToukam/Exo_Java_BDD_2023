@@ -38,6 +38,32 @@
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la gauche</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
+<%@ page import="java.util.Scanner" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <title>Carré d'étoiles</title>
+</head>
+<body>
+
+<%
+    Scanner scanner = new Scanner(System.in);
+    out.print("Entrez la taille du carré : ");
+    int taille = scanner.nextInt();
+
+    for (int i = 0; i < taille; i++) {
+        for (int j = 0; j < taille; j++) {
+            out.print("*");
+        }
+        out.println("<br>");
+    }
+
+    scanner.close();
+%>
+
+</body>
+</html>
+
 <p>*****</br>****</br>***</br>**</br>*</p>
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
