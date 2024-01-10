@@ -30,7 +30,7 @@
 <p>Ecrire le code afin de produire un carré d'étoile</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
-<%
+<p>
     Scanner scanner = new Scanner(System.in);
     out.print("Entrez la taille du carré : ");
     int taille = scanner.nextInt();
@@ -43,7 +43,7 @@
     }
 
     scanner.close();
-%>
+</p>
 
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 
@@ -52,7 +52,7 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 
 <p>*</br>**</br>***</br>****</br>*****</p>
-<%
+<p>
     Scanner scanner = new Scanner(System.in);
     out.print("Entrez la taille du triangle : ");
     int taille = scanner.nextInt();
@@ -65,7 +65,7 @@
     }
 
     scanner.close();
-%>
+</p>
 <p>*****</br>*****</br>*****</br>*****</br>*****</p>
 
 <h2>Exercice 3 : Triangle rectangle inversé</h2>
@@ -73,7 +73,7 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 
 <p>*****</br>****</br>***</br>**</br>*</p>
-<%
+<p>
     Scanner scanner = new Scanner(System.in);
     out.print("Entrez la taille du triangle : ");
     int taille = scanner.nextInt();
@@ -86,14 +86,14 @@
     }
 
     scanner.close();
-%>
+</p>
 <p>*****</br>****</br>***</br>**</br>*</p>
 
 <h2>Exercice 4 : Triangle rectangle 2</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
-<%
+<p>
     Scanner scanner = new Scanner(System.in);
     out.print("Entrez la taille du triangle : ");
     int taille = scanner.nextInt();
@@ -113,14 +113,14 @@
     }
 
     scanner.close();
-%>
+</p>
 <br>
 
 <h2>Exercice 5 : Triangle isocele</h2>
 <p>Ecrire le code afin de produire un triangle rectangle aligné sur la droite</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;***</br>&nbsp;****</br>*****</p>
-<%
+<p>
     int taille = 5; // Vous pouvez changer la taille du triangle
 
     for (int i = 0; i < taille; i++) {
@@ -136,7 +136,7 @@
 
         out.println("<br>");
     }
-%>
+</p>
 <br>
 
 <h2>Exercice 6 : Le demi losange</h2>
@@ -144,7 +144,7 @@
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;***</br>&nbsp;&nbsp;****</br>*****</p>
 <p>*****</br>&nbsp;&nbsp;****</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</p>
-<%
+<p>
     int taille = 5; // Vous pouvez changer la taille du demi-losange
 
     for (int i = 0; i < taille; i++) {
@@ -162,11 +162,11 @@
         }
         out.println("<br>");
     }
-%>
+</p>
 <br>
 
 <h2>Exercice 7 : La table de multiplication</h2>
-<%
+<p>
     int taille = 10; // Vous pouvez changer la taille de la table de multiplication
 
     out.println("<table border=\"1\">");
@@ -191,7 +191,7 @@
     }
 
     out.println("</table>");
-%>
+</p>
 <br>
 <p>Ecrire le code afin de créer une table de multiplication</p>
 <p>Exemple si l'utilisateur saisie le valeur 5</p>
