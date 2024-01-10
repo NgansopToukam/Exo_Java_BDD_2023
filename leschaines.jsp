@@ -146,8 +146,6 @@ xueivulp ares revih'l</p>
     }
 </p>
 
-<p>Nombre de consonnes : <%= nbConsonnes %></p>
-<p>Nombre de voyelles : <%= nbVoyelles %></p>
 
 <p>Ecrire le programme afin de compter les consonnes et les voyelles dans votre texte</p>
 
