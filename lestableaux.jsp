@@ -9,17 +9,17 @@
     <p>Saisir au minimu 3 chiffres à la suite, exemple : 6 78 15 <input type="text" id="inputValeur" name="chaine">
     <p><input type="submit" value="Afficher">
 </form>
-<%-- Récupération des valeurs --%>
-    <% String chaine = request.getParameter("chaine"); %>
+<p>-- Récupération des valeurs --</p>
+    <p> String chaine = request.getParameter("chaine"); </p>
     
-    <% if (chaine != null)  %>
+    <p> if (chaine != null)  </p>
 
-    <%-- Division de la chaîne de chiffres séparés par des espaces --%>
-    <% String[] tableauDeChiffres = chaine.split("\\s+"); %>
-    <p>La tableau contient <%= tableauDeChiffres.length %> valeurs</br>
-    Chiffre 1 : <%= Integer.parseInt(tableauDeChiffres[0]) %></br>
-    Chiffre 2 : <%= Integer.parseInt(tableauDeChiffres[1]) %></br>
-    Chiffre 3 : <%= Integer.parseInt(tableauDeChiffres[2]) %></p>
+    <p>-- Division de la chaîne de chiffres séparés par des espaces --</p>
+    <p> String[] tableauDeChiffres = chaine.split("\\s+"); </p>
+    <p>La tableau contient  tableauDeChiffres.length  valeurs</br>
+    Chiffre 1 :  Integer.parseInt(tableauDeChiffres[0]) </br>
+    Chiffre 2 :  Integer.parseInt(tableauDeChiffres[1]) </br>
+    Chiffre 3 :  Integer.parseInt(tableauDeChiffres[2]) </p>
     
 <h2>Exercice 1 : La carré de la première valeur</h2>
 <p>Ecrire un programme afin d'afficher le carré de la première valeur</p>
