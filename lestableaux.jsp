@@ -28,7 +28,7 @@
     int[] tableau = {5, 10, 15, 20};
 
     // Vérifiez d'abord si le tableau a au moins une valeur
-    if (tableau.length > 0) {
+    if (tableau.length > 0) 
         // La première valeur du tableau
         int premiereValeur = tableau[0];
 
@@ -39,12 +39,10 @@
 </P>
         <p>Le carré de la première valeur du tableau est : carreDePremiereValeur</p>
 <p>
-    } else {
+    else 
 </p>
         <p>Le tableau est vide.</p>
-<p>
-    }
-</p>
+
 
 <h2>Exercice 2 : La somme des 2 premières valeurs</h2>
 <p>Ecrire un programme afin d'afficher la somme des deux premières valeurs</p>
@@ -211,10 +209,9 @@ Ecrire un programme afin de faire la somme de toutes les valeurs saisie par l'ut
 </form>
 
 <p>-- Afficher la valeur la plus proche de 0 si des valeurs ont été saisies --</p>
-<p> if (valeurs != null) { </p>
+<p> if (valeurs != null)  </p>
     <p>Les valeurs saisies sont :  String.join(", ", valeurs) </p>
     <p>La valeur la plus proche de 0 est :  valeurProcheDeZero </p>
-<p> } </p>
 
 <h2>Exercice 7 : La valeur le plus proche de 0 (2° version)</h2>
 
